@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Coin</title>
+    <style>
+        .but {
+            border-radius: 50px;
+            border: none;
+            height: 65px;
+            width: 65px;
+            color: black;
+            background-color: rgb(245, 186, 37);
+            transition: 0.5s;
+        }
+        .but:hover {
+            cursor: pointer;
+            opacity: 70%;
+            background-color: rgb(228, 192, 101);
+            box-shadow: 2px 2px 30px 2px rgb(245, 186, 37);
+
+        }
+    </style>
+</head>
+<body>
+    <p>Flip coin</p>
+    <button class="but" onclick="
+    const randomNumber = Math.random();
+
+    let computerMove = '';
+
+    if (randomNumber<1/2) {
+    computerMove = 'tail';
+    } else if (randomNumber <1 && randomNumber>= 1/2) {
+    computerMove = 'head';
+    }
+
+    let result ='';
+
+    if (result=== 'tail') {
+        result = 'Tail';
+    } else if (result=== 'head') {
+        result = 'Head'
+    }
+
+    alert(`You got ${computerMove}`);
+    ">Flip Coin</button>
+
+    <script></script>
+</body>
+</html>
